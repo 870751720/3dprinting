@@ -1,0 +1,23 @@
+<view >
+      <image  src="{{paygoods[0].imgUrl}}"></image>
+</view>
+      <view >
+       <text>{{paygoods[0].name}}</text>
+</view>
+
+<view>
+      <text>总共有{{paygoods.length}}件商品</text>
+      <text >总价:{{order.totalmoney}}</text>
+</view>
+     <view>
+      <text>输入退货换货的原因:</text>
+</view>
+
+<view>
+      <textarea  bindinput='intext'  data-index='{{index}}' maxlength="256" auto-height/>
+</view>
+
+
+<view >
+   <button bindtap="submitClick">发表</button>
+</view>

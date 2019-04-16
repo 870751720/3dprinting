@@ -1,0 +1,67 @@
+{
+  "pages": [
+   
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/payorder/payorder",
+    "pages/cartpayorder/cartpayorder",
+    "pages/collection/collection",
+    "pages/comment/comment",
+    "pages/addressList/addressList",
+    "pages/address/address",
+    "pages/cart/cart",
+    "pages/classify/classify",
+    "pages/classifyGoods/classifyGoods",
+    "pages/chat/chat",
+    "pages/mycomments/mycomments",
+    "pages/detail/detail",
+    "pages/orders/orders",
+    "pages/orderdetail/orderdetail",
+    "pages/changeaddress/changeaddress",
+    "pages/setcomment/setcomment",
+    "pages/logistics/logistics",
+    "pages/aftersale/aftersale",
+    "pages/aftersaledetail/aftersaledetail",
+    "pages/aftersalerecord/aftersalerecord"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0145a",
+    "navigationBarTitleText": "3D打印售卖平台",
+    "backgroundColor": "#f0145a",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#f0145a",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/classify.png",
+        "selectedIconPath": "images/classify_select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart_select.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_select.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+.header{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: red;
+  height: 50rpx;
+  padding-left: 10rpx;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header_text{
+  font-size: 14px;
+}
+.else_text{
+  font-size: 14px;
+  padding-left: 20px;
+}
+.P_information{
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-weight: 300;
+}
+.address{
+  word-break: break-all;
+}
+.selection{
+  border-bottom: 4px solid #ddd;
+}/*分隔条设置*/
+
+.collect{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.picture_image{
+  width: 100px;
+  height: 100px;
+  padding-left: 5px;
+}
+
+.collect_introduce{
+  float: right;
+  padding-left: 8px;
+}
+
+.collect_picture{
+ float: left;
+}
+
+.introduce_text{
+  word-break: break-all;
+}
+.collect_introduce{
+  padding: 5px;
+   display: block;
+  white-space: pre-line;
+}
+.introduce_text{
+   overflow: hidden;
+   word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  font-size: 14px;
+}
+
+.content-breif {
+  -webkit-line-clamp: 4; 
+}
+
+.else_intro1{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  margin-left: 20px;
+}
+.else_intro2{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  color: red;
+  margin-right: 50px;
+}
+
+.else_infor{
+  display: flex;
+  justify-content: space-between;
+}
+.else_price{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  color: red;
+  margin-right: 50px;
+}
+
+.introduce{
+  display: flex;
+  justify-content: space-between;
+}
+
+.s_text{
+  font-size: 12px;
+  border: black;
+  color: gray;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.s_location{
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding-bottom: 8px;
+
+}
+.q_text{
+  font-size: 12px;
+  border: black;
+  color: red;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 8px;
+}
+.q_location{
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding-bottom: 8px;
+}
+.status{
+  display: flex;
+  justify-content:flex-end;
+  margin: 10px;
+}
+.talprice{
+  display: flex;
+  justify-content:flex-end;
+  margin-right: 90px;
+  margin-bottom: 10px;
+}

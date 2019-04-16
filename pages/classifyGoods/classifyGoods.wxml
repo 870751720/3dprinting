@@ -1,0 +1,20 @@
+<view class="welfare-container"> 
+  <scroll-view scroll-y="true">
+    <view class="welfares">
+      <block wx:for-items="{{Goods}}" wx:key="id">
+        <view class="welfares-good" catchtap="catchTapCategory" data-name="{{item.goodsname}}" data-goodsid="{{item.goodsid}}">
+          <view>
+            <image src="{{item.goodsimgurl}}" class="welfares-image" mode="widthFix"/> 
+          </view>
+          <view class="product-name">
+            {{item.goodsname}}
+          </view>
+          <view class="product-price-wrap">
+            <p class="product-price">￥{{item.goodsprice}}</p>  
+          </view>      
+        </view>
+      </block> 
+    </view>
+  </scroll-view>  
+</view>   
+

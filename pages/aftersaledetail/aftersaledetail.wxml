@@ -1,0 +1,69 @@
+<view >
+  <text>个人信息</text>
+</view>
+
+<view >
+  <text>收货人: {{orderaddress.consignee}}</text>
+  <text>电话：{{orderaddress.mobile}}</text>
+  <text >地址：{{orderaddress.address}}</text> 
+</view>
+
+<view>
+    <view >备注</view>
+       <text>{{order.note}}</text>
+</view>
+
+
+<view>
+    <view >订单信息</view>
+      <view >  
+        <text>商家备注：{{order.storenote}}</text>
+        <text>物流编号：{{order.couriernumber}}</text>
+        <text>支付编号：{{order.paynumber}}</text>
+        <text>创建时间：{{order.createdatetime}}</text>
+      </view>
+</view>
+
+
+
+<block wx:for-items="{{paygoods}}" wx:key="id">
+<view >
+  <view>
+    <image src="{{item.imgUrl}}"></image>
+  </view>
+  <view>
+    <text >{{item.name}}</text>
+  </view>  
+</view>  
+
+<view >
+  <view >
+      <text>单格</text>
+      <text>数量</text>
+      <text>价格</text>
+  </view>    
+
+  <view >
+    <text>{{item.price}}</text>
+    <text>×{{item.count}}</text>
+    <text>{{item.totalMoney}}</text>
+  </view>  
+</view>   
+</block> 
+<view >
+<text >商品总价</text>
+ <text >{{order.totalmoney}}</text>
+</view>
+<view>
+      <text>退货理由备注{{order.aftersalenote}}</text>
+</view>  
+<view>
+      <text>商家给的备注{{order.aftersalestorenote}}</text>
+</view>   
+<view>
+    <text>退单状态 {{aftersalestate[order.aftersalestate -1]}}</text>
+</view> 
+
+<view  hidden='{{hide}}'>
+<button bindtap='cancel' >取消退单</button>
+</view>

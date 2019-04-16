@@ -1,0 +1,22 @@
+<view class="container">
+
+  <view class="nav_left">
+    <block wx:for="{{classifyItems}}" wx:key="id">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">
+          {{item.name}}
+        </view>
+    </block>
+  </view>
+
+  <view class="nav_right">
+    <view wx:if="{{classifyItems[curIndex].ishaveChild}}">
+      <block wx:for="{{classifyItems[curIndex].shopClassifyDtoList}}" wx:key="id">
+        <view class="nav_right_items"  bindtap='catchTapCategory' data-classifyid='{{item.bigid}}' data-smallclassifyid='{{item.id}}'> 
+            <image src="{{item.imgUrl}}"></image>
+            <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+    <view class="nodata_text" wx:else>该分类暂无数据</view>
+  </view>
+</view>

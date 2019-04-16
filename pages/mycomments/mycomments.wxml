@@ -1,0 +1,25 @@
+
+ <block wx:for-items="{{comments}}" wx:key="id">
+    <view class="comment">
+        
+          <view class="name">
+                <text>{{item.username}}</text>
+          </view>
+          <view class="time">     
+                <text>{{item.commentcreatedate}}</text>
+          </view>
+          <view class="comt">  
+                <text class='comt_text'>{{item.goodscomment}}</text>
+          </view>
+
+        <view class="comt_else" catchtap='gogoodsdetail' data-goodsid="{{item.goodsid}}">
+                <image class="picture_image" src="{{item.goodsimgurl}}"></image>
+              <view class='inform'>
+                <text>{{item.goodsname}}</text>
+                <text class='price'>￥{{item.goodsprice}}</text>
+              </view>
+        </view>
+         
+    </view> 
+  </block> 
+  

@@ -1,0 +1,12 @@
+.comment{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.set_text{
+  height: 150px;
+}
+.text-item{
+  padding: 5px;
+  font-size: 14px;
+}

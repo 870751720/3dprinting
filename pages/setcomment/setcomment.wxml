@@ -1,0 +1,15 @@
+<block wx:for-items="{{paygoods}}" wx:key="id" >
+<view class='comment'>
+   <view class='picintro'>
+      <image  src="{{paygoods[index].imgUrl}}"></image>
+      <text >{{paygoods[index].name}}</text>
+   </view>
+
+   <view class='set_text'>
+     <textarea class="text-item" bindinput='intext'  data-index='{{index}}' maxlength="256" auto-height placeholder="商品评价" />
+   </view>
+</view>
+</block>
+<view >
+   <button bindtap="submitClick">发表</button>
+</view>

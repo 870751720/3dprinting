@@ -1,0 +1,18 @@
+
+<view class="container">
+ <block wx:for-items="{{comments}}" wx:key="id">
+    <view class="comment">
+        
+          <view class="name">
+                <text>{{item.username}}</text>
+          </view>
+          <view class="time">     
+                <text>{{item.commentcreatedate}}</text>
+          </view>
+          <view class="comt">  
+                <text>{{item.goodscomment}}</text>
+          </view>
+            
+    </view> 
+  </block> 
+ </view>   

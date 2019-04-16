@@ -1,0 +1,7 @@
+<input  type="text" maxlength="28" bindinput="nmsginput" />
+<button bindtap='sendmsg'>send</button>
+<view wx:for="{{chatmsg}}" wx:for-index='i' wx:key='id'>
+  <text>{{chatmsg[i].time}}  </text> 
+  <text>{{chatmsg[i].msg}}  </text>
+  <text>{{chatmsg[i].msguserid}}</text>         
+</view>

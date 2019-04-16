@@ -1,0 +1,8 @@
+ <block wx:for-items="{{courier}}" wx:key="id">
+          <view >
+                <text>{{item.time}}</text>
+          </view>
+          <view class="time">     
+                <text>{{item.context}}</text>
+          </view>
+  </block> 

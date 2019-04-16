@@ -1,0 +1,36 @@
+<view class="Allorders">
+     <view class="navbar">
+        <text  wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+     </view>
+</view>     
+
+<block wx:for-items="{{orders}}" wx:key="id" >
+  <view class="myorder">
+
+    <view class="mine" bindtap='orderdetail' data-index='{{index}}'>
+      <view class="myorder_image">
+        <image class="order_image" src="{{paygoods[index][0].imgUrl}}"></image>
+      </view>
+      <view class="order_introduce">
+              <text class='order_text {{isShowAllContent ?"content-all" :"content-breif"}}'>{{paygoods[index][0].name}}</text>
+      </view>
+      <view class="else_intro">
+        <text>单价:{{paygoods[index][0].price}}</text>
+        <text>数量:{{paygoods[index][0].count}}</text>
+        <text >总价:{{orders[index].totalmoney}}</text>
+      </view> 
+    </view>
+    <view class="talprice" >
+      <text>总共有{{paygoods[index].length}}件商品</text>
+    </view>
+
+    <view class="status">
+      <view class="s_location" bindtap='leftways'  data-index='{{index}}'>
+        <text class="s_text" >{{statetitleleft[orders[index].state]}}</text>
+      </view>
+      <view class="q_location">
+        <text class="q_text" bindtap='rightways'  data-index='{{index}}'>{{statetitleright[orders[index].state]}}</text>
+      </view>
+    </view>
+  </view>
+</block> 

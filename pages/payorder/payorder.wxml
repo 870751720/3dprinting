@@ -1,0 +1,58 @@
+<view class='header'>
+  <text class="header_text" >个人信息</text>
+</view>
+
+<view class="P_information">
+  <text>收货人: {{orderaddress.consignee}}</text>
+  <text>电话：{{orderaddress.mobile}}</text>
+  <text class="address">地址：{{orderaddress.address}}</text> 
+  <text bindtap='gochangeaddress'>改变地址</text>
+</view>
+
+<view class='selection'></view>
+
+<view>
+    <view class="else_text">备注</view>
+      <input  type="text" maxlength="28" bindinput="noteInput" />
+</view>
+
+<view class='selection'></view>
+<block wx:for-items="{{ paygoods}}" wx:key="id">
+<view class='collect'>
+  <view class='collect_picture'>
+    <image class="picture_image" src="{{item.imgUrl}}"></image>
+  </view>
+  <view class='collect_introduce'>
+    <text class='introduce_text {{isShowAllContent ?"content-all" :"content-breif"}}'>{{item.name}}</text>
+  </view>  
+</view>  
+
+<view class="introduce">
+  <view class="else_intro1">
+      <text>单价</text>
+      <text>数量</text>
+      <text>价格</text>
+  </view>    
+
+  <view class="else_intro2">
+    <text>{{item.price}}</text>
+    <text>×{{item.count}}</text>
+    <text>{{item.totalMoney}}</text>
+  </view>  
+</view>   
+</block> 
+<view class='selection'></view>
+  <view class='else_infor'>
+    <text class="else_text">商品总价</text>
+    <text class='else_price'>{{totalmoney}}</text>
+  </view>
+<view class='selection'></view>
+
+    <view class="status">
+          <view class="s_location" bindtap='notpay'>
+          <text class="s_text">取消支付</text>
+          </view>
+          <view class="q_location" bindtap='pay'>
+          <text class="q_text">确认支付</text>
+          </view>
+      </view>

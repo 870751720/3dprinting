@@ -1,0 +1,17 @@
+<view class='collect'>
+ <block wx:for-items="{{userlike}}" wx:key="id">
+   <view class='mycollect'>
+        <view class='collect_picture' catchtap='gogoodsdetail' data-goodsid="{{item.goodsid}}">
+          <image class="picture_image" src="{{item.goodsimgurl}}"></image>
+        </view>
+        
+         <view class='collect_introduce'> 
+            <text class='introduce_text {{isShowAllContent ?"content-all" :"content-breif"}}'>{{item.goodsname}}</text>
+            <view class='collect_price'> 
+            <text class='price_text'>{{item.goodsprice}}</text>
+            </view> 
+         </view> 
+          
+    </view>    
+        </block>
+</view>  

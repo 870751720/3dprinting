@@ -1,0 +1,81 @@
+
+<form  bindsubmit="saveAddress">
+
+  <view >
+
+    <view >
+
+      <view>
+        <view>收货人</view>
+      </view>
+      <view class='text'>
+        <input name="consignee" placeholder="请输入收货人真实姓名" />
+      </view>
+    </view>
+
+    <view >
+      <view >
+        <view >手机号</view>
+      </view>
+      <view class='text'>
+        <input   type="number" name="mobile" placeholder="请输入收货人手机号" />
+      </view>
+    </view>
+
+  </view>
+
+  <view ></view>
+
+  <view>
+
+    <view >
+      <view >
+        <view >省份</view>
+      </view>
+      <view class='text'> 
+        <picker bindchange="bindProvinceNameChange" value="{{provinceIndex}}" range="{{provinceNames}}">
+          <view >{{provinceNames[provinceIndex]}}</view>
+          <input name="provinceName" hidden="true" value="{{provinceNames[provinceIndex]}}" />
+        </picker>
+      </view>
+    </view>
+
+    <view >
+      <view >
+        <view >城市</view>
+      </view>
+      <view class='text'>
+        <picker bindchange="bindCityNameChange" value="{{cityIndex}}" range="{{cityNames}}">
+          <view  name="city_name">{{cityNames[cityIndex]}}</view>
+
+          <input name="cityName" hidden="true" value="{{cityNames[cityIndex]}}" />
+        </picker>
+      </view>
+    </view>
+
+    <view >
+      <view >
+        <view >区县</view>
+      </view>
+      <view class='text'>
+        <picker bindchange="bindCountyNameChange" value="{{countyIndex}}" range="{{countyNames}}">
+          <view >{{countyNames[countyIndex]}}</view>
+          <input name="countyName" hidden="true" value="{{countyNames[countyIndex]}}" />
+        </picker>
+      </view>
+    </view>
+
+    <view >
+      <view>
+        <view >详细地址</view>
+      </view>
+      <view class='text'>
+        <input  name="address" placeholder="请输入收货人详细地址" />
+      </view>
+    </view>
+  </view>
+
+<view class='but'>
+  <button  type="primary" form-type="submit">保存</button>
+ </view> 
+</form>

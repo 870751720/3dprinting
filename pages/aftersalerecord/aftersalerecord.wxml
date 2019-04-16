@@ -1,0 +1,24 @@
+<view wx:for="{{orders}}" wx:for-index='i' wx:key='id'>
+<view  bindtap='orderdetail' data-index='{{i}}'>
+ <view >
+      <image  src="{{paygoods[i][0].imgUrl}}"></image>
+</view>
+<view >
+       <text>{{paygoods[i][0].name}}</text>
+</view>
+
+<view>
+      <text>总共有{{paygoods[i].length}}件商品</text>
+      <text >总价:{{orders[i].totalmoney}}</text>
+</view>
+     <view>
+      <text>商家给的备注{{orders[i].aftersalestorenote}}</text>
+</view>   
+<view>
+    <text>退单状态 {{aftersalestate[orders[i].aftersalestate -1]}}</text>
+</view>   
+</view>
+<view  hidden='{{hides[i]}}'>
+<button bindtap='cancel' data-index='{{i}}'>取消退单</button>
+</view>
+</view>

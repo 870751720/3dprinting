@@ -1,0 +1,133 @@
+.navbar{  
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  flex: none;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 27px;  
+}  
+.navbar .item.active{  
+  color: #f0145a;  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background: #f0145a;  
+}
+
+.myorder{
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8FF;
+  margin: 5px;
+}
+.order_image{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+  padding-left: 5px;
+}
+
+.order_introduce{
+  float: right;
+  padding-left: 8px;
+}
+
+.myorder_image{
+ float: left;
+}
+
+.order_text{
+  word-break: break-all;
+}
+.order_introduce{
+  padding-top: 8px;
+   position: absolute;
+   left: 120px;
+}
+.order_text{
+   overflow: hidden;
+   word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  font-size: 14px;
+}
+
+.content-breif {
+  -webkit-line-clamp: 3; 
+}
+
+.mine{
+  display: flex;
+  justify-content: space-between;
+}
+
+.else_intro{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  color: red;
+}
+
+.s_text{
+  font-size: 12px;
+  border: black;
+  color: gray;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.s_location{
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding-bottom: 8px;
+
+}
+.q_text{
+  font-size: 12px;
+  border: black;
+  color: red;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 8px;
+}
+.q_location{
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding-bottom: 8px;
+}
+.status{
+  display: flex;
+  justify-content:flex-end;
+}
+.talprice{
+  padding-top: 10px;
+  padding-left: 3px;
+}
+.talprice_text{
+  color: red;
+  font-size: 13px;
+}
